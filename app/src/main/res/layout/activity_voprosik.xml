@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings_in.Voprosik">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lotye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/animation_llwbdbbn" />
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voprosy" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:onClick="expand1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                        tools:layout_editor_absoluteX="35dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Как оплатить заказ?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Для физических лиц есть несколько вариантов – картами российских банков, SberPay, Юмани. Для юридических лиц возможна оплата по счету – мы работаем без НДС."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:onClick="expand2"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                        tools:layout_editor_absoluteX="24dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Как я узнаю, что заказ выполнен?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Отчеты по заказу мы присылаем на email и по смс. Если ваш номер телефона зарегистрирован в WhatsApp, то они будут приходить в мессенджер."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:onClick="expand3"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                        tools:layout_editor_absoluteX="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Можно заказать доставку анонимно?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Конечно! Просто не подписывайте открытку, мы гарантируем конфиденциальность."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:onClick="expand4"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                        tools:layout_editor_absoluteX="-2dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Можно заказать заранее?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Да, конечно! При оформлении заявки появится календарь, укажите там желаемую дату доставки."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:onClick="expand5"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+                        tools:layout_editor_absoluteX="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Можно добавить открытку?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Да, открытка бесплатна. Текст и подпись для открытки сможете указать в форме заказа после выбора даты доставки."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="-20dp"
+                        android:onClick="expand6"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                        tools:layout_editor_absoluteX="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Как добавить конфеты, шары, торт?"
+                                android:textColor="@color/material_dynamic_primary0"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/details6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="После добавления букета в корзину вы перейдете к оформлению заказа, где сможете приложить конфеты, воздушные шарики, торт, мишку, фрукты и не только."
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

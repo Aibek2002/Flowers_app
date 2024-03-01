@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro_View">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/animation_llwbc4mr" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imageintro"
+        android:src="@drawable/logo_titile" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotye"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation_llw3mdli" />
+
+
+</RelativeLayout>
